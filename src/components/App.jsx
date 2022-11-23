@@ -1,10 +1,13 @@
 import './App.css';
+import Navbar from './Navbar/navbar';
+import ItemListContainer from './ItemListContainer/itemListContainer';
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1>Hola, buenas tardes como </h1>
-    </div>
+    <>
+    <Navbar/>
+    <ItemListContainer greeting={"Aquí ira el contenido de mi página"}/>
+    </>
   );
 }
 

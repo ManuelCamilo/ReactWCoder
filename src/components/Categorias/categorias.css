@@ -1,0 +1,17 @@
+
+.botonesNavBar {
+    font-size: 1.5rem;
+	background-color:transparent;
+	cursor:pointer;
+	color: rgba(197, 197, 197, 0.827);
+	font-family:Arial;
+	text-decoration:none;
+    border: none;
+}
+.botonesNavBar:hover {
+    color: rgba(0, 0, 0, 0.500);
+}
+.botonesNavBar:focus{
+	color: rgba(0,0,0,0.750);
+}
+

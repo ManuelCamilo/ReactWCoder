@@ -1,0 +1,7 @@
+.cart{
+    background-color: #ffec00;
+    border: none;
+}
+.cart:hover{
+    background-color: rgba(0, 57, 77, 0.8);
+}
