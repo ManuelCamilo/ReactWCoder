@@ -2,7 +2,7 @@ import './categorias.css';
 
 const Categorias = () => {
     return (
-        <div className="collapse navbar-collapse">
+    <div className="collapse navbar-collapse">
       <ul className="navbar-nav">
         <li className="nav-item">
         <button className="nav-link botonesNavBar" aria-current="page" > Juegos </button>
@@ -11,10 +11,10 @@ const Categorias = () => {
         <button className="nav-link botonesNavBar" aria-current="page" > Consolas </button>
         </li>
         <li className="nav-item">
-        <button className="nav-link botonesNavBar" aria-current="page" > Software </button>
+        <button className="nav-link botonesNavBar" aria-current="page" > Notebooks </button>
         </li>
         <li className="nav-item">
-        <button className="nav-link botonesNavBar" aria-current="page" > Servicios </button>
+        <button className="nav-link botonesNavBar" aria-current="page" > Merch </button>
         </li>
       </ul>
     </div>
