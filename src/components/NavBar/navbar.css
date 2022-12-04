@@ -3,3 +3,12 @@
     border: none;
     cursor: pointer;
 }
+.navegacion{
+    height: 7rem;
+}
+.navegacion__categorias{
+    color: red;
+}
+.contador{
+    margin-top: 10rem;
+}
