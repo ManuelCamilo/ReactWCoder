@@ -1,6 +1,6 @@
 import './navbar.css';
 import CartWidget from '../CartWidget/cartWidget';
-import Categorias from '../Categorias/categorias.jsx';
+import Categorias from './Categorias/categorias.jsx';
 import LogoSvg from '../LogoSvg/logoSvg.jsx';
 
 const Navbar = () => {

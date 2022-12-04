@@ -1,0 +1,104 @@
+[
+    {
+        "id": 1,
+        "idCategoria": 1,
+        "nombre":"Ghost Recon",
+        "marca":"ubisoft",
+        "modelo":"",
+        "precio":4890,
+        "stock":10,
+        "img":"ghostReconPS4.jpg"
+    },
+    {
+        "id": 2,
+        "idCategoria": 2,
+        "nombre":"Litle Nightmares 2",
+        "marca":"Supermassive Games",
+        "modelo":"",
+        "precio":4890,
+        "stock":10,
+        "img":"littleNightmares2PS4.jpg"
+    },
+    {
+        "id": 3,
+        "idCategoria": 3,
+        "nombre":"Consola Playstation 4 Slim 1TB Mega Pack 6 + 3 juegos",
+        "marca":"sony",
+        "modelo":"",
+        "precio":4890,
+        "stock":4,
+        "img":"megaPackPS4.jpg"
+    },
+    {
+        "id": 4,
+        "idCategoria": 4,
+        "nombre":"Consola Nintendo Switch Neon Red y Blue",
+        "marca":"Nintendo",
+        "modelo":"",
+        "precio":149000,
+        "stock":5,
+        "img":"nintendoSwitchRedyBlue.jpg"
+    },
+    {
+        "id": 5,
+        "idCategoria": 5,
+        "nombre":"Resident Evil 2 remake",
+        "marca":"capcom",
+        "modelo":"",
+        "precio":7999,
+        "stock":10,
+        "img":"residentEvil2RMKPS4.jpg"
+    },
+    {
+        "id": 6,
+        "idCategoria": 6,
+        "nombre":"Resident Evil 8",
+        "marca":"capcom",
+        "modelo":"",
+        "precio":12990,
+        "stock":10,
+        "img":"residentEvil8PS4.jpg"
+    },
+    {
+        "id": 7,
+        "idCategoria": 7,
+        "nombre":"Consola Retro Game Family 300 Juegos en 1",
+        "marca":"",
+        "modelo":"",
+        "precio":4890,
+        "stock":10,
+        "img":"retroGameFamily300en1.jpg"
+    },
+    {
+        "id": 8,
+        "idCategoria": 8,
+        "nombre":"Consola Steam Deck 256GB",
+        "marca":"steam",
+        "modelo":"",
+        "precio":359990,
+        "stock":10,
+        "img":"SteamDeck.jpg"
+    },
+    {
+        "id": 9,
+        "idCategoria": 9,
+        "nombre":"The Last Of Us Part2",
+        "marca":"ps4",
+        "modelo":"",
+        "precio":6599,
+        "stock":10,
+        "img":"theLastOfUsPS4"
+    },
+    {
+        "id": 10,
+        "idCategoria": 10,
+        "nombre":"Consola Xbox Series X 1TB",
+        "marca":"steam",
+        "modelo":"",
+        "precio":269990,
+        "stock":10,
+        "img":"XBOXseriesX.jpg"
+    }
+
+
+]
