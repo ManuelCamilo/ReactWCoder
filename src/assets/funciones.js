@@ -4,4 +4,4 @@ const consultarBDD = async () => {
     return productos
 }
 
-export default consultarBDD
+export {consultarBDD}
