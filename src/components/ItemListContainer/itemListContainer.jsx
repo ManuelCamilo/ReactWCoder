@@ -9,9 +9,6 @@ const ItemListContainer = ({greeting}) => {
             setProductos(cardProductos)
         })
     }, []);
-    console.log(productos)
-
-
     
     return (
         <div>

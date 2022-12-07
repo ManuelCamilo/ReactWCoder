@@ -6,7 +6,7 @@
         "marca":"ubisoft",
         "modelo":"",
         "precio":4890,
-        "stock":10,
+        "stock":1,
         "img":"ghostReconPS4.jpg"
     },
     {
@@ -16,7 +16,7 @@
         "marca":"Supermassive Games",
         "modelo":"",
         "precio":4890,
-        "stock":10,
+        "stock":4,
         "img":"littleNightmares2PS4.jpg"
     },
     {
@@ -26,7 +26,7 @@
         "marca":"sony",
         "modelo":"",
         "precio":4890,
-        "stock":4,
+        "stock":10,
         "img":"megaPackPS4.jpg"
     },
     {
@@ -36,7 +36,7 @@
         "marca":"Nintendo",
         "modelo":"",
         "precio":149000,
-        "stock":5,
+        "stock":2,
         "img":"nintendoSwitchRedyBlue.jpg"
     },
     {
@@ -46,7 +46,7 @@
         "marca":"capcom",
         "modelo":"",
         "precio":7999,
-        "stock":10,
+        "stock":2,
         "img":"residentEvil2RMKPS4.jpg"
     },
     {
@@ -56,7 +56,7 @@
         "marca":"capcom",
         "modelo":"",
         "precio":12990,
-        "stock":10,
+        "stock":4,
         "img":"residentEvil8PS4.jpg"
     },
     {
@@ -66,7 +66,7 @@
         "marca":"",
         "modelo":"",
         "precio":4890,
-        "stock":10,
+        "stock":20,
         "img":"retroGameFamily300en1.jpg"
     },
     {
@@ -76,7 +76,7 @@
         "marca":"steam",
         "modelo":"",
         "precio":359990,
-        "stock":10,
+        "stock":12,
         "img":"SteamDeck.jpg"
     },
     {
@@ -86,15 +86,15 @@
         "marca":"ps4",
         "modelo":"",
         "precio":6599,
-        "stock":10,
+        "stock":4,
         "img":"theLastOfUsPS4.jpg"
     },
     {
         "id": 10,
         "idCategoria": 10,
-        "nombre":"Consola Xbox Series X 1TB",
-        "marca":"steam",
-        "modelo":"",
+        "nombre":"Xbox Series X 1TB",
+        "marca":"XBOX",
+        "modelo":"Series X",
         "precio":269990,
         "stock":10,
         "img":"XBOXseriesX.jpg"

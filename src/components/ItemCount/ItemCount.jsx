@@ -3,24 +3,17 @@ import {useState} from 'react';
 const ItemCount = ({stock}) => {
     const [contador, setContador] = useState(1);
 
-    const sumar = () => {
-        if(contador <10)
-            setContador(contador+1);
-    }
-    const restar = () => {
-        if(contador>1)
-            setContador(contador-1);
-    }
-    const Agregar = () => {
-        console.log(contador);
-    }
+    const sumar = () => contador < stock && setContador(contador + 1)
+
+    const restar = () => contador > 1 && setContador(contador - 1)
+    
     
     return (
         <div className='contador'>
             <button className='btn btn-dark' onClick={() => sumar()}>+</button>
             {contador}
             <button className='btn btn-dark' onClick={() => restar ()}>-</button>
-            <button className='btn btn-light' onClick={() => Agregar () }> Agregar al carrito </button>
+            <button className='btn btn-light'> Agregar al carrito </button>
         </div>
     );
 }
