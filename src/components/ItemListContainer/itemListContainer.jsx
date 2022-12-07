@@ -1,6 +1,6 @@
 import { useState, useEffect} from "react";
 import ItemList from "../ItemList/ItemList";
-import consultarBDD from '../../assets/funciones.js'
+import {consultarBDD} from '../../assets/funciones.js'
 const ItemListContainer = ({greeting}) => {
     const [productos,setProductos] = useState([]);
     useEffect(() => {

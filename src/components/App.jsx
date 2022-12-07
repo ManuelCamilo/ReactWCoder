@@ -6,8 +6,8 @@ function App() {
   return (
     <>
     <Navbar/>
-    <ItemListContainer greeting={""}/>
-    <ItemDetailContainer/>
+    <ItemListContainer/>
+    <ItemDetailContainer />
     </>
   );
 }
