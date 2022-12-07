@@ -3,25 +3,16 @@
     margin: 0%;
 }
 .cardProducto{
-    width: 15rem;
-    margin: 4px;
     height: 22rem;
 }
-.cardProductos{
-    margin: 4px;
-}
+
 .contenedorImg{
     height: 60%
 }
 .imagenProducto{
     height: 100%;
-    width: 100%;
-    display: block;
     object-fit: scale-down;
-    padding: 5%;
-}
-.infoProducto{
-    height: auto;
+    padding: 7%;
 }
 .infoProducto__boton{
     border-radius: 4px;
@@ -32,12 +23,14 @@
     margin-bottom: 0.5rem;
 }
 .infoProducto__title{
-    margin-top: -10%;
+    position: relative;
+    bottom:15%;
 }
 .contenedorCard{
     margin-left: auto;
     margin-right: auto;
 }
-.itemDetal{
-    
+.itemDetail{
+    max-width: 540px;
+    margin-top: 20px;
 }

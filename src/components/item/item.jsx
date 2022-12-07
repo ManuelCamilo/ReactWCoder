@@ -1,11 +1,10 @@
 //card
 const Item = ({producto}) => {
-    console.log(producto)
     return (
         <>
-            <div className="card cardProducto">
+            <div className="card col-lg-3 col-md-5 col-sm-10 cardProducto ">
                 <span className="contenedorImg">
-                    <img src={`../img/${producto.img}`} className="card-img-top imagenProducto img-fluid" alt="al parecer nada..." />
+                    <img src={`../img/${producto.img}`} className="card-img-top imagenProducto" alt="al parecer nada..." />
                 </span>
                 <div className="card-body text-center infoProducto position-relative">
                     <h5 className="card-title infoProducto__title">{producto.nombre}</h5>

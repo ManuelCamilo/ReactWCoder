@@ -6,7 +6,7 @@ const ItemDetailContainer = () => {
     
     useEffect(() => {
         consultarBDD().then(productos => {
-            const prod = productos.find(product => product.id === 1)
+            const prod = productos.find(product => product.id === 8)
             setProducto (prod)
         })
     
