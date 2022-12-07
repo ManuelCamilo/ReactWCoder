@@ -1,9 +1,40 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
 .cardProducto{
     width: 15rem;
     margin: 4px;
+    height: 22rem;
 }
 .cardProductos{
     margin: 4px;
-    align-items: center;
-    justify-content: center;
+}
+.contenedorImg{
+    height: 60%
+}
+.imagenProducto{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: scale-down;
+    padding: 5%;
+}
+.infoProducto{
+    height: auto;
+}
+.infoProducto__boton{
+    border-radius: 4px;
+    height: 25%;
+    font-size: 0.8rem;
+}
+.infoProducto__precio{
+    margin-bottom: 0.5rem;
+}
+.infoProducto__title{
+    margin-top: -10%;
+}
+.contenedorCard{
+    margin-left: auto;
+    margin-right: auto;
 }

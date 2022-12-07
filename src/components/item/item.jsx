@@ -4,15 +4,17 @@ const Item = ({producto}) => {
     return (
         <>
             <div className="card cardProducto">
-                <img src={`../img/${producto.img}`} className="card-img-top" alt="al parecer nada..." />
-                    <div className="card-body">
-                    <h5 className="card-title">{producto.nombre}</h5>
-                    <p className="card-text">{producto.marca}</p>
-                    <p className="card-text">{producto.precio}</p>
-                    <button className="btn btn-dark">ver producto</button>
-       
-    </div>
-</div>
+                <span className="contenedorImg">
+                    <img src={`../img/${producto.img}`} className="card-img-top imagenProducto img-fluid" alt="al parecer nada..." />
+                </span>
+                <div className="card-body text-center infoProducto position-relative">
+                    <h5 className="card-title infoProducto__title">{producto.nombre}</h5>
+                    <div className="position-absolute bottom-0 mb-2 start-50 translate-middle-x">
+                        <p className="card-text infoProducto__precio">{producto.precio}</p>
+                        <button className="btn btn-danger infoProducto__boton">ver producto</button>
+                    </div>
+                </div>
+            </div>
 
         </>
     );

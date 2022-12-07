@@ -22,7 +22,7 @@
     {
         "id": 3,
         "idCategoria": 3,
-        "nombre":"Consola Playstation 4 Slim 1TB Mega Pack 6 + 3 juegos",
+        "nombre":"Play Station 4 1tb - Combo Mega",
         "marca":"sony",
         "modelo":"",
         "precio":4890,
@@ -32,7 +32,7 @@
     {
         "id": 4,
         "idCategoria": 4,
-        "nombre":"Consola Nintendo Switch Neon Red y Blue",
+        "nombre":"Nintendo Switch Neon Red y Blue",
         "marca":"Nintendo",
         "modelo":"",
         "precio":149000,
@@ -62,7 +62,7 @@
     {
         "id": 7,
         "idCategoria": 7,
-        "nombre":"Consola Retro Game Family 300 Juegos en 1",
+        "nombre":"Consola Retro Game Family",
         "marca":"",
         "modelo":"",
         "precio":4890,
@@ -87,7 +87,7 @@
         "modelo":"",
         "precio":6599,
         "stock":10,
-        "img":"theLastOfUsPS4"
+        "img":"theLastOfUsPS4.jpg"
     },
     {
         "id": 10,

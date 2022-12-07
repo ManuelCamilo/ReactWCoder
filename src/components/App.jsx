@@ -5,7 +5,7 @@ function App() {
   return (
     <>
     <Navbar/>
-    <ItemListContainer greeting={"Hola, ESTO ES EL LLENADO MAGICO"}/>
+    <ItemListContainer greeting={""}/>
     </>
   );
 }

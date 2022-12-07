@@ -14,7 +14,7 @@ const ItemListContainer = ({greeting}) => {
 
     
     return (
-        <div className="row cardProductos">
+        <div className="cardProductos d-flex flex-row ">
             {productos}
         </div>
     );
