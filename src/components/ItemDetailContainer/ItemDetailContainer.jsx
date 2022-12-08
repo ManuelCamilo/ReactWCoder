@@ -1,12 +1,14 @@
 import { useState, useEffect, } from "react";
+import { useParams } from "react-router-dom";
+
 import {consultarBDD} from '../../assets/funciones.js'
 import ItemDetail from "../ItemDetail/ItemDetail.jsx";
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState([]);
-    
+    const {id} = useParams()
     useEffect(() => {
-        consultarBDD().then(productos => {
-            const prod = productos.find(product => product.id === 10)
+        consultarBDD('../json/productos.json').then(productos => {
+            const prod = productos.find(product => product.id === parseInt(id))
             setProducto (prod)
         })
     

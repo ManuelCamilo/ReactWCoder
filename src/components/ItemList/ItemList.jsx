@@ -1,8 +1,8 @@
 import Item from "../item/item";
-const ItemList = ({productList}) => {
+const ItemList = ({productsList}) => {
     return (
         <div className="contenedorCard row container-lg">
-            {productList.map(product => <Item key={product.id} producto={product}/>)}
+            {productsList.map(producto => <Item key={producto.id} prod = {producto}/>)}
         </div>
     );
 }

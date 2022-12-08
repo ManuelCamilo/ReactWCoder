@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "idCategoria": 1,
+        "idCategoria": "games",
         "nombre":"Ghost Recon",
         "marca":"ubisoft",
         "modelo":"",
@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "idCategoria": 2,
+        "idCategoria": "games",
         "nombre":"Litle Nightmares 2",
         "marca":"Supermassive Games",
         "modelo":"",
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "idCategoria": 3,
+        "idCategoria": "consolas",
         "nombre":"Play Station 4 1tb - Combo Mega",
         "marca":"sony",
         "modelo":"",
@@ -31,7 +31,7 @@
     },
     {
         "id": 4,
-        "idCategoria": 4,
+        "idCategoria": "consolas",
         "nombre":"Nintendo Switch Neon Red y Blue",
         "marca":"Nintendo",
         "modelo":"",
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "idCategoria": 5,
+        "idCategoria": "games",
         "nombre":"Resident Evil 2 remake",
         "marca":"capcom",
         "modelo":"",
@@ -51,7 +51,7 @@
     },
     {
         "id": 6,
-        "idCategoria": 6,
+        "idCategoria": "games",
         "nombre":"Resident Evil 8",
         "marca":"capcom",
         "modelo":"",
@@ -61,7 +61,7 @@
     },
     {
         "id": 7,
-        "idCategoria": 7,
+        "idCategoria": "consolas",
         "nombre":"Consola Retro Game Family",
         "marca":"",
         "modelo":"",
@@ -71,7 +71,7 @@
     },
     {
         "id": 8,
-        "idCategoria": 8,
+        "idCategoria": "consolas",
         "nombre":"Consola Steam Deck 256GB",
         "marca":"steam",
         "modelo":"",
@@ -81,7 +81,7 @@
     },
     {
         "id": 9,
-        "idCategoria": 9,
+        "idCategoria": "games",
         "nombre":"The Last Of Us Part2",
         "marca":"ps4",
         "modelo":"",
@@ -91,14 +91,122 @@
     },
     {
         "id": 10,
-        "idCategoria": 10,
+        "idCategoria": "consolas",
         "nombre":"Xbox Series X 1TB",
         "marca":"XBOX",
         "modelo":"Series X",
         "precio":269990,
         "stock":10,
         "img":"XBOXseriesX.jpg"
+    },
+    {
+        "id": 11,
+        "idCategoria": "merch",
+        "nombre":"Figura Lee Sin",
+        "marca":"League of Legends",
+        "modelo":"",
+        "precio":11999,
+        "stock":1,
+        "img":"Figura Lee Sin LOL.jpg"
+    },
+    {
+        "id": 12,
+        "idCategoria": "merch",
+        "nombre":"God of War Espadas del Caos Réplica escala 1:1",
+        "marca":"",
+        "modelo":"",
+        "precio":8499,
+        "stock":1,
+        "img":"God of War Espadas del Caos Réplica escala 1.jpg"
+    },
+    {
+        "id": 13,
+        "idCategoria": "merch",
+        "nombre":"Figura Rengar LOL",
+        "marca":"League of Legends",
+        "modelo":"",
+        "precio":18890,
+        "stock":1,
+        "img":"Figura Rengar LOL.jpg"
+    },
+    {
+        "id": 14,
+        "idCategoria": "merch",
+        "nombre":"Llavero Hacha God of War Leviatan",
+        "marca":"China",
+        "modelo":"",
+        "precio":1250,
+        "stock":5,
+        "img":"Llavero Hacha God of War Leviatan.jpg"
+    },
+    {
+        "id": 15,
+        "idCategoria": "merch",
+        "nombre":"Naruto Set Ninja",
+        "marca":"China",
+        "modelo":"",
+        "precio":18890,
+        "stock":1,
+        "img":"Naruto Set Ninja.jpg"
+    },
+    {
+        "id": 16,
+        "idCategoria": "merch",
+        "nombre":"Llavero PUBG Casco",
+        "marca":"",
+        "modelo":"",
+        "precio":2990,
+        "stock":2,
+        "img":"Llavero PUBG Casco.jpg"
+    },
+    {
+        "id": 17,
+        "idCategoria": "notebooks",
+        "nombre":"Notebook Dell Inspiron 3511 Core i3 1115G4",
+        "marca":"Dell",
+        "modelo":"Inspiron 3511",
+        "precio":145990,
+        "stock":5,
+        "img":"Notebook Dell Inspiron 3511 Core i3 1115G4.jpg"
+    },
+    {
+        "id": 18,
+        "idCategoria": "notebooks",
+        "nombre":"Notebook Asus Tuf Dash F15 i5-11300H",
+        "marca":"Asus",
+        "modelo":"Tuf Dash F15",
+        "precio":374990,
+        "stock":2,
+        "img":"Notebook Asus Tuf Dash F15 i5-11300H.jpg"
+    },
+    {
+        "id": 19,
+        "idCategoria": "notebooks",
+        "nombre":"Notebook Gigabyte Aorus KE4 i7-12700H",
+        "marca":"GigaByte",
+        "modelo":"Aorus KE4",
+        "precio":514990,
+        "stock":1,
+        "img":"Notebook Gigabyte Aorus KE4 i7-12700H.jpg"
+    },
+    {
+        "id": 20,
+        "idCategoria": "notebooks",
+        "nombre":"Notebook Lenovo ThinkPad L15 I7-1165G7",
+        "marca":"Lenovo",
+        "modelo":"ThinkPad",
+        "precio":271990,
+        "stock":1,
+        "img":"Notebook Lenovo ThinkPad L15 I7-1165G7.jpg"
+    },{
+        "id": 21,
+        "idCategoria": "notebooks",
+        "nombre":"Notebook Lenovo V15 i3-10100",
+        "marca":"China",
+        "modelo":"",
+        "precio":148990,
+        "stock":3,
+        "img":"Notebook Lenovo V15 i3-10100.jpg"
     }
-
-
+    
 ]

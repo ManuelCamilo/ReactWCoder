@@ -1,7 +1,7 @@
 import ItemCount from "../ItemCount/ItemCount";
 
 const ItemDetail = ({item}) => {
-    console.log(item)
+
     return (
         <div className="row g-0">
             <div className="col-md-4">
