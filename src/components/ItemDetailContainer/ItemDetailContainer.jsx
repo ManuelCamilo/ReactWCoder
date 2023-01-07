@@ -1,6 +1,5 @@
 import { useState, useEffect, } from "react";
 import { useParams } from "react-router-dom";
-
 import {consultarBDD} from '../../assets/funciones.js'
 import ItemDetail from "../ItemDetail/ItemDetail.jsx";
 const ItemDetailContainer = () => {
@@ -12,7 +11,9 @@ const ItemDetailContainer = () => {
             setProducto (prod)
         })
     
-    }, []);
+    }, 
+    // []
+    );
 
     return (
         <div className="card mb-3 container itemDetail">
