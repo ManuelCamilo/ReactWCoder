@@ -1,9 +1,10 @@
 import ItemCount from "../ItemCount/ItemCount";
-
+import { useCarritoContext } from "../../context/CarritoContex";
 const ItemDetail = ({item}) => {
-
+    const {addItem} = useCarritoContext()
+    
     const onAdd = (contador) => {
-        console.log(contador)
+        addItem(item, contador)
     }
 
     return (
