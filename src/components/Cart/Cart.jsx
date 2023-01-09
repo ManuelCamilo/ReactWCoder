@@ -12,11 +12,36 @@ const Cart = () => {
                 <button className="btn btn-dark"><Link to={'/'}> Continuar Comprando </Link> </button>
             </>
             :
-            <>
-                <h1>Productos</h1>
-                <button className="btn btn-dark"><Link to={'/checkout'}> Finalizar Compra </Link> </button>
-                <button className="btn btn-dark"><Link to={'/'}> Continuar Comprando </Link> </button>
-            </>
+            <div className="container cartContainer">
+                {
+                    carrito.map(prod =>
+                        <div className="card mb-3" key={prod.id} style={{maxWidth: '540px'}}>
+                            <div className="row g-0">
+                                <div className="col-md-4">
+                                    <img src={`../img/${prod.img}`} alt="producto" className="img-fluid rounded-start" />
+                                </div>
+                            </div>
+                            <div className="col-md-8"></div>
+                                <div className="cardBody">
+                                    <h5 className="card-title"> {`${prod.nombre} ${prod.marca}`}</h5>
+                                    <p className="card-text">Cantidad: {prod.cant}</p>
+                                    <p className="card-text">Precio unitario: {new Intl.NumberFormat ('de-De').format(prod.precio)} </p>
+                                    <p className="card-text">Precio total: {new Intl.NumberFormat ('de-De').format(prod.precio * prod.cant)}</p>
+                                </div>
+                                <button className="btn btn-danger" onClick= {() => removeItem(prod.id)}>Eliminar producto</button>
+                        </div>
+                        
+                        
+                )}
+
+
+                <p>Precio total: ${ new Intl.NumberFormat('de-De').format(totalPrice())}</p>
+                <button className="btn btn-danger" onClick={emptyCart}>Vaciar Carrito</button>
+                <div>    
+                    <button className="btn btn-dark"><Link to={'/checkout'}> Finalizar Compra </Link> </button>
+                    <button className="btn btn-dark"><Link to={'/'}> Continuar Comprando </Link> </button>
+                </div>
+            </div>
             }
         </>
     );
