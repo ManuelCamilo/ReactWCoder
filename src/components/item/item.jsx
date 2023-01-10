@@ -5,7 +5,7 @@ const Item = ({prod}) => {
         <>
             <div className="card col-lg-3 col-md-4 col-sm-6 cardProducto ">
                 <span className="contenedorImg">
-                    <img src={`../img/${prod.img}`} className="card-img-top imagenProducto" alt="al parecer nada..." />
+                    <img src={prod.img} className="card-img-top imagenProducto" alt="al parecer nada..." />
                 </span>
                 <div className="card-body text-center infoProducto position-relative">
                     <h5 className="card-title infoProducto__title">{prod.nombre}</h5>

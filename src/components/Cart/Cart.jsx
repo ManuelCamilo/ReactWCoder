@@ -14,11 +14,11 @@ const Cart = () => {
             :
             <div className="container cartContainer">
                 {
-                    carrito.map(prod =>
+                    carrito.map((prod) =>
                         <div className="card mb-3" key={prod.id} style={{maxWidth: '540px'}}>
                             <div className="row g-0">
                                 <div className="col-md-4">
-                                    <img src={`../img/${prod.img}`} alt="producto" className="img-fluid rounded-start" />
+                                    <img src={prod.img} alt="producto" className="img-fluid rounded-start" />
                                 </div>
                             </div>
                             <div className="col-md-8"></div>
@@ -29,9 +29,7 @@ const Cart = () => {
                                     <p className="card-text">Precio total: {new Intl.NumberFormat ('de-De').format(prod.precio * prod.cant)}</p>
                                 </div>
                                 <button className="btn btn-danger" onClick= {() => removeItem(prod.id)}>Eliminar producto</button>
-                        </div>
-                        
-                        
+                        </div>   
                 )}
 
 

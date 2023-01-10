@@ -7,7 +7,7 @@
         "modelo":"",
         "precio":4890,
         "stock":1,
-        "img":"ghostReconPS4.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/ghostReconPS4.jpg?alt=media&token=6846434c-538d-45b4-9c15-ef055bbc4573"
     },
     {
         "id": 2,
@@ -17,7 +17,7 @@
         "modelo":"",
         "precio":4890,
         "stock":4,
-        "img":"littleNightmares2PS4.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/littleNightmares2PS4.jpg?alt=media&token=dd6143e5-4f4e-47cc-b7f4-3ca3f6e6791c"
     },
     {
         "id": 3,
@@ -27,7 +27,7 @@
         "modelo":"",
         "precio":4890,
         "stock":10,
-        "img":"megaPackPS4.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/megaPackPS4.jpg?alt=media&token=5ef7c5ad-a4e1-4fa0-a6a9-54cbed0eb496"
     },
     {
         "id": 4,
@@ -37,7 +37,7 @@
         "modelo":"",
         "precio":149000,
         "stock":2,
-        "img":"nintendoSwitchRedyBlue.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/nintendoSwitchRedyBlue.jpg?alt=media&token=9388565d-a0a2-4ca7-a0fe-f82d9a98ea67"
     },
     {
         "id": 5,
@@ -47,7 +47,7 @@
         "modelo":"",
         "precio":7999,
         "stock":2,
-        "img":"residentEvil2RMKPS4.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/residentEvil2RMKPS4.jpg?alt=media&token=e4771bb8-1170-4cd3-a34c-ace7f96bf53d"
     },
     {
         "id": 6,
@@ -57,7 +57,7 @@
         "modelo":"",
         "precio":12990,
         "stock":4,
-        "img":"residentEvil8PS4.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/residentEvil8PS4.jpg?alt=media&token=1a9b28cf-6272-4320-928e-f72df8395508"
     },
     {
         "id": 7,
@@ -67,7 +67,7 @@
         "modelo":"",
         "precio":4890,
         "stock":20,
-        "img":"retroGameFamily300en1.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/retroGameFamily300en1.jpg?alt=media&token=b3b953bf-5eff-4b21-8808-67f605b6e3aa"
     },
     {
         "id": 8,
@@ -77,7 +77,7 @@
         "modelo":"",
         "precio":359990,
         "stock":12,
-        "img":"SteamDeck.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/SteamDeck.jpg?alt=media&token=6563a9a2-327b-4f07-8199-7399bf1236fb"
     },
     {
         "id": 9,
@@ -87,7 +87,7 @@
         "modelo":"",
         "precio":6599,
         "stock":4,
-        "img":"theLastOfUsPS4.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/theLastOfUsPS4.jpg?alt=media&token=b1cabc6d-70a8-4e2f-a7fe-9133d554256d"
     },
     {
         "id": 10,
@@ -97,7 +97,7 @@
         "modelo":"Series X",
         "precio":269990,
         "stock":10,
-        "img":"XBOXseriesX.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/XBOXseriesX.jpg?alt=media&token=ab3b386b-dc4c-45e3-96c9-b25384aa0a0e"
     },
     {
         "id": 11,
@@ -107,7 +107,7 @@
         "modelo":"",
         "precio":11999,
         "stock":1,
-        "img":"Figura Lee Sin LOL.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/Figura%20Lee%20Sin%20LOL.jpg?alt=media&token=3c4c8b3a-756a-42d2-91f6-f1d92a025225"
     },
     {
         "id": 12,
@@ -117,7 +117,7 @@
         "modelo":"",
         "precio":8499,
         "stock":1,
-        "img":"God of War Espadas del Caos Réplica escala 1.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/God%20of%20War%20Espadas%20del%20Caos%20R%C3%A9plica%20escala%201.jpg?alt=media&token=07019a56-cd5f-4f2d-91be-d65a14afb6a2"
     },
     {
         "id": 13,
@@ -127,7 +127,7 @@
         "modelo":"",
         "precio":18890,
         "stock":1,
-        "img":"Figura Rengar LOL.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/Figura%20Rengar%20LOL.jpg?alt=media&token=ec4c0d8b-0017-4fa7-be06-13614075cd65"
     },
     {
         "id": 14,
@@ -137,7 +137,7 @@
         "modelo":"",
         "precio":1250,
         "stock":5,
-        "img":"Llavero Hacha God of War Leviatan.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/Llavero%20Hacha%20God%20of%20War%20Leviatan.jpg?alt=media&token=900f8c85-4dcc-4793-af87-2031e40db6f5"
     },
     {
         "id": 15,
@@ -147,7 +147,7 @@
         "modelo":"",
         "precio":18890,
         "stock":1,
-        "img":"Naruto Set Ninja.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/Naruto%20Set%20Ninja.jpg?alt=media&token=37aadfcf-a439-46ff-9663-1382e92e5e66"
     },
     {
         "id": 16,
@@ -157,7 +157,7 @@
         "modelo":"",
         "precio":2990,
         "stock":2,
-        "img":"Llavero PUBG Casco.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/Llavero%20PUBG%20Casco.jpg?alt=media&token=d267864e-9763-4122-bb34-cf02009ed98f"
     },
     {
         "id": 17,
@@ -167,7 +167,7 @@
         "modelo":"Inspiron 3511",
         "precio":145990,
         "stock":5,
-        "img":"Notebook Dell Inspiron 3511 Core i3 1115G4.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/Notebook%20Dell%20Inspiron%203511%20Core%20i3%201115G4.jpg?alt=media&token=6480b91d-cea6-4f9c-ac5b-9eeb6dd7a91a"
     },
     {
         "id": 18,
@@ -177,7 +177,7 @@
         "modelo":"Tuf Dash F15",
         "precio":374990,
         "stock":2,
-        "img":"Notebook Asus Tuf Dash F15 i5-11300H.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/Notebook%20Asus%20Tuf%20Dash%20F15%20i5-11300H.jpg?alt=media&token=c0dc94ec-31a9-4e7c-8e05-d3f2328874f0"
     },
     {
         "id": 19,
@@ -187,7 +187,7 @@
         "modelo":"Aorus KE4",
         "precio":514990,
         "stock":1,
-        "img":"Notebook Gigabyte Aorus KE4 i7-12700H.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/Notebook%20Gigabyte%20Aorus%20KE4%20i7-12700H.jpg?alt=media&token=4dedcbbb-74ca-4030-907a-e5c50167b3fe"
     },
     {
         "id": 20,
@@ -197,7 +197,7 @@
         "modelo":"ThinkPad",
         "precio":271990,
         "stock":1,
-        "img":"Notebook Lenovo ThinkPad L15 I7-1165G7.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/Notebook%20Lenovo%20ThinkPad%20L15%20I7-1165G7.jpg?alt=media&token=2c6fd92f-5672-44e8-baf8-fd7766168017"
     },{
         "id": 21,
         "idCategoria": "notebooks",
@@ -206,7 +206,7 @@
         "modelo":"",
         "precio":148990,
         "stock":3,
-        "img":"Notebook Lenovo V15 i3-10100.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/Notebook%20Lenovo%20V15%20i3-10100.jpg?alt=media&token=2f142b45-7cad-47d8-8898-b450075e13d2"
     }
     
 ]
