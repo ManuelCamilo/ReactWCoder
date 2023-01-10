@@ -1,8 +1,10 @@
 import { useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
-import { getProductos, getProducto, updateProducto} from '../../assets/firebase.js';
-//importa cargarBDD si agrega productos 
+import { getProductos } from '../../assets/firebase.js';
+
+//importar getProducto y updateProducto desde firebase y descomentar funcion para poder actualizar stocks manualmente de dichos productos.
+//importa cargarBDD si agrega productos y funcion 
 //importa deleteProducto si elimina producto
 const ItemListContainer = () => {
     
@@ -24,11 +26,11 @@ const ItemListContainer = () => {
         })
     }
     
-    /*
-    getProducto("6idcd5gsApOrkEfYNAtv").then(prod => {
-        prod.stock -= 3
+    
+    /*getProducto("vbdgkiCls5mvLmdlXxnE").then(prod => {
+        prod.stock += 20
         delete prod.id
-        updateProducto("6idcd5gsApOrkEfYNAtv", prod).then(estado => console.log(estado))
+        updateProducto("vbdgkiCls5mvLmdlXxnE", prod).then(estado => console.log(estado))
     }) */
 
     //deleteProducto("aqXOnlLOXyGHeZfazC0W").then(estado => console.log(estado))
