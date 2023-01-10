@@ -74,7 +74,7 @@
         "idCategoria": "consolas",
         "nombre":"Consola Steam Deck 256GB",
         "marca":"steam",
-        "modelo":"",
+        "modelo":"256GB",
         "precio":359990,
         "stock":12,
         "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/SteamDeck.jpg?alt=media&token=6563a9a2-327b-4f07-8199-7399bf1236fb"
@@ -202,8 +202,8 @@
         "id": 21,
         "idCategoria": "notebooks",
         "nombre":"Notebook Lenovo V15 i3-10100",
-        "marca":"China",
-        "modelo":"",
+        "marca":"Lenovo",
+        "modelo":"V15",
         "precio":148990,
         "stock":3,
         "img":"https://firebasestorage.googleapis.com/v0/b/react-w-coderhouse.appspot.com/o/Notebook%20Lenovo%20V15%20i3-10100.jpg?alt=media&token=2f142b45-7cad-47d8-8898-b450075e13d2"

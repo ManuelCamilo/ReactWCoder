@@ -1,7 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { createOrdenCompra, getOrdenCompra } from '../../assets/firebase';
+import { useCarritoContext } from '../../context/CarritoContex';
 const Checkout = () => {
-
+    const {totalPrice} = useCarritoContext()
     const datosFormulario = React.useRef()
     let navigate = useNavigate()
 
@@ -10,9 +12,13 @@ const Checkout = () => {
         e.preventDefault()
         const datForm = new FormData(datosFormulario.current)
         const cliente = Object.fromEntries(datForm)
-        e.target.reset()
-        console.log(cliente)
-        navigate("/")
+        createOrdenCompra(cliente, totalPrice(), new Date().toISOString()).then(ordenCompra => {
+            getOrdenCompra(ordenCompra.id).then(item => {
+                console.log(item)
+                e.target.reset()
+                navigate("/")   
+            })
+        })
     }
 
     return (

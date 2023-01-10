@@ -1,9 +1,9 @@
 import { useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
-import {consultarBDD} from '../../assets/funciones.js'
-import { cargarBDD } from '../../assets/firebase.js';
-
+import { getProductos, getProducto, updateProducto} from '../../assets/firebase.js';
+//importa cargarBDD si agrega productos 
+//importa deleteProducto si elimina producto
 const ItemListContainer = () => {
     
     const [productos,setProductos] = useState([]);
@@ -11,21 +11,29 @@ const ItemListContainer = () => {
 
     useEffect(() => {
         if(category) {
-            consultarBDD('../json/productos.json').then(products => {
+            getProductos().then(products => {
                 const productsList= products.filter(prod => prod.stock > 0).filter(prod => prod.idCategoria === (category))
                 const cardProductos = ItemList({productsList})
                 setProductos(cardProductos)
         })
     }   else{
-            consultarBDD('./json/productos.json').then(products => {
+            getProductos().then(products => {
                 const productsList= products.filter(prod => prod.stock > 0)
                 const cardProductos = ItemList({productsList})
                 setProductos(cardProductos)
         })
     }
+    
+    /*
+    getProducto("6idcd5gsApOrkEfYNAtv").then(prod => {
+        prod.stock -= 3
+        delete prod.id
+        updateProducto("6idcd5gsApOrkEfYNAtv", prod).then(estado => console.log(estado))
+    }) */
 
-    //cargarBDD().then(productos => console.log(productos))
+    //deleteProducto("aqXOnlLOXyGHeZfazC0W").then(estado => console.log(estado))
 
+    //cargarBDD()
  },[category]);
     
     return (
