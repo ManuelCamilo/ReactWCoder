@@ -1,6 +1,11 @@
 :root{
     --fuentePrincipal: "Roboto", cursive;
     --fuenteSecundaria: "Staatliches", cursive;
+    --primario: rgb(17,17,31);
+    --secundario: #f7f7f7;
+    --blacno:#fff;
+    --fontc: rgba(0, 0, 0, 0.689);
+    /* --primario: */
 }
 html{
     box-sizing: border-box;
@@ -10,24 +15,70 @@ html{
     padding: 0%;
     margin: 0%;
 }
-
+body{
+    background-color: var(--secundario);
+}
+.navegacion{
+    background-color: var(--primario);
+}
+h3{
+    font-family: var(--fuentePrincipal);
+    color: var(--fontc);
+    font-weight: 600;
+}
 .sharkyLogo{
     height: 13rem;
 }
-.cardProducto{
-    height: 22rem;
+.carrusel{
+    height: max-content;    
 }
 
+.contenido{
+    max-width: 120rem;
+    margin: 0 auto
+}
+.destacados{
+    font-family:  var(--fuenteSecundaria);
+    color: var(--primario);
+    font-size: 5rem;
+    margin-top: 10rem;
+}
+.bg-productos{
+    background-color: var(--secundario);
+}
+.contenedorCard{
+    max-width: 120rem;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+}
+.contenedorFlotante{
+    height: 14rem;
+    width: 30rem;
+    background-color: var(--primario);
+    position: relative;
+    bottom:250rem;
+    left: 115rem; 
+}
+.cardProducto{
+    height: 35rem;
+    background-color: #fff;
+    box-shadow: rgb(3 3 3 / 8%) 0px 4px 12px ;
+}
 .contenedorImg{
-    height: 60%
+    height: 70%;
+    overflow: hidden;
 }
 .imagenProducto{
     height: 100%;
     object-fit: scale-down;
     padding: 7%;
+    transition: 2s;
+
 }
-.itemDetail{
-   
+.imagenProducto:hover{
+    transform: scale(1.5);
 }
 .contador{
     margin-top: 10rem;
@@ -39,14 +90,13 @@ html{
 }
 .infoProducto__precio{
     margin-bottom: 0.5rem;
+    color: var(--fontc);
+    font-family: 1.3rem;
 }
 .infoProducto__title{
     position: relative;
-    bottom:15%;
-}
-.contenedorCard{
-    margin-left: auto;
-    margin-right: auto;
+    bottom: 10%;
+    font-family: var(--fuentePrincipal);
 }
 .itemDetail{
     max-width: 54rem;

@@ -4,8 +4,8 @@ import ItemList from "../ItemList/ItemList";
 import { getProductos } from '../../assets/firebase.js';
 
 //importar getProducto y updateProducto desde firebase y descomentar funcion para poder actualizar stocks manualmente de dichos productos.
-//importa cargarBDD si agrega productos y funcion 
-//importa deleteProducto si elimina producto
+//importar cargarBDD si agrega productos y funcion 
+//importar deleteProducto si elimina producto
 const ItemListContainer = () => {
     
     const [productos,setProductos] = useState([]);
@@ -39,9 +39,15 @@ const ItemListContainer = () => {
  },[category]);
     
     return (
-        <div>
-            {productos}
+        <>
+        <div className="d-flex row contenido">
+            <h2 className="destacados">PRODUCTOS DESTACADOS</h2>
+            <div className="bg-productos">
+                {productos}
+            </div>
         </div>
+        <div className="contenedorFlotante"></div>
+        </>
     );
 }
 

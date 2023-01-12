@@ -1,4 +1,4 @@
-const LogoSvg = () => {
+const Logo = () => {
     return (
         <button className="navbar-brand logo" href="#"> 
             <img src="../img/sharkyGames.png" className="sharkyLogo" alt="" />
@@ -6,4 +6,4 @@ const LogoSvg = () => {
         );
 }
 
-export default LogoSvg;
+export default Logo;

@@ -10,6 +10,7 @@ import { ToastContainer} from 'react-toastify';
 
 //Components
 import Navbar from './Navbar/navbar';
+import Carrusel from './Carrusel/carrusel';
 import ItemListContainer from './ItemListContainer/itemListContainer';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 import Cart from './Cart/Cart';
@@ -20,6 +21,7 @@ const App = () => {
     <BrowserRouter>
       <CarritoProvider>
         <Navbar/>
+        <Carrusel/>
         <Routes>
           <Route path='/' element={<ItemListContainer/>}/>
           <Route path='product/:id' element= {<ItemDetailContainer/>}/>
