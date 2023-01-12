@@ -1,6 +1,18 @@
+:root{
+    --fuentePrincipal: "Roboto", cursive;
+    --fuenteSecundaria: "Staatliches", cursive;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
 *{
     padding: 0%;
     margin: 0%;
+}
+
+.sharkyLogo{
+    height: 13rem;
 }
 .cardProducto{
     height: 22rem;
@@ -37,6 +49,6 @@
     margin-right: auto;
 }
 .itemDetail{
-    max-width: 540px;
-    margin-top: 20px;
+    max-width: 54rem;
+    margin-top: 2rem;
 }
