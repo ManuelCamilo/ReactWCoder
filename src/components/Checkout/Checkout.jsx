@@ -21,7 +21,8 @@ const Checkout = () => {
                     prodBDD.stock -= prodCarrito.cant
                     updateProducto(prodCarrito.id, prodBDD)
                 } else {
-                    console.log("Stock no valido")
+                    toast.error (`El producto ${prodBDD.nombre} no posee stock suficiente`)
+                    emptyCart()
                     //CASO USO PRODUCTO NO COMPRADO
                 } 
             })
@@ -46,6 +47,9 @@ const Checkout = () => {
                 </div>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email</label>
+                    <input type="email" className="form-control" name="email" />
+                </div><div className="mb-3">
+                    <label htmlFor="email" className="form-label">Repetir Email</label>
                     <input type="email" className="form-control" name="email" />
                 </div>
                 <div className="mb-3">

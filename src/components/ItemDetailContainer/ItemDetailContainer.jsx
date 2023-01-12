@@ -9,10 +9,10 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         getProducto(id).then (prod => setProducto (prod))
-    },[]);
+    },[id]);
 
     return (
-        <div className="card mb-3 container itemDetail">
+        <div className="card mt-5 container-md">
             <ItemDetail item={producto}/>
         </div>
     );

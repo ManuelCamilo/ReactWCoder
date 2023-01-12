@@ -9,10 +9,10 @@ const ItemDetail = ({item}) => {
 
     return (
         <div className="row g-0">
-            <div className="col-md-4">
+            <div className="col-lg-6">
                 <img src={item.img} alt="" className="card-img-top imagenProducto img-fluid" />
             </div>
-            <div className="col-md-8">
+            <div className="col-md-4">
                 <div className="card-body">
                     <h5 className="card-title">{item.nombre}</h5>
                     <p className="card-text">Modelo: {item.modelo}</p>
