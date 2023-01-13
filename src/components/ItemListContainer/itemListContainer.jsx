@@ -27,10 +27,10 @@ const ItemListContainer = () => {
     }
     
     
-    /* getProducto("wQd2RbjWxcXDQ4BVTUSa").then(prod => {
+    /*getProducto("Y8uXAZBhOBDjz66VM6Oj").then(prod => {
         prod.stock += 17
         delete prod.id
-        updateProducto("wQd2RbjWxcXDQ4BVTUSa", prod).then(estado => console.log(estado))
+        updateProducto("Y8uXAZBhOBDjz66VM6Oj", prod).then(estado => console.log(estado))
     }) */
 
     //deleteProducto("aqXOnlLOXyGHeZfazC0W").then(estado => console.log(estado))
