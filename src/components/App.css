@@ -6,6 +6,7 @@
     --blacno:#fff;
     --fontc: rgba(0, 0, 0, 0.689);
     /* --primario: */
+    background-color: var(--secundario);
 }
 html{
     box-sizing: border-box;
@@ -75,8 +76,8 @@ h3{
     object-fit: scale-down;
     padding: 7%;
     transition: 2s;
-
 }
+
 .imagenProducto:hover{
     transform: scale(1.5);
 }
@@ -84,6 +85,9 @@ h3{
     border-radius: 4px;
     height: 25%;
     font-size: 0.8rem;
+}
+.imagenProductoDetail{
+    height: auto;
 }
 .infoProducto__precio{
     margin-bottom: 0.5rem;
@@ -112,7 +116,47 @@ h3{
 }
 .finalizarCompra{
     margin-top: 3rem;
+    height: 4rem;
+    border-radius: 4px;
+    text-decoration: none;
 }
 .cantidadActual{
     font-size: 3.9rem;
+}
+.cartContainer{
+    max-width: 76rem;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.3rem;
+    margin-top: 5rem;
+    background-color: var(--secundario);
+    box-shadow: rgb(3 3 3 / 8%) 0px 4px 12px;
+}
+ .cartEstilos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+.imgCart{
+    height: 100%;
+    object-fit: scale-down;
+}
+.totalPrice{
+    font-family: var(--fuenteSecundaria);
+    font-weight: 400;
+    font-size: 3rem;
+    color:var(--primario)
+}
+.carritoTitulo{
+    font-family: var(--fuenteSecundaria);
+    font-weight: 400;
+    font-size: 5rem;
+    color:var(--primario);
+    margin-top: 6rem;
+    margin-left: 20rem;
+}
+.botonAgregar{
+    font-family: var(--fuenteSecundaria);
+    font-weight: 300;
+    font-size: 2rem;
+    margin-left: 20rem;    
 }

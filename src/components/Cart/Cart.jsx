@@ -8,38 +8,38 @@ const Cart = () => {
         <>
             {carrito.length === 0 ?
             <>
-                <h1> Carrito Vacio </h1>
-                <button className="btn btn-dark"><Link to={'/'}> Continuar Comprando </Link> </button>
+                <h1 className="carritoTitulo"> Carrito Vacio </h1>
+                <button className="btn btn-danger botonAgregar"><Link to={'/'} className="nav-link"> Agregar productos! </Link> </button>
             </>
             :
-            <div className="container cartContainer">
-                {
-                    carrito.map((prod) =>
-                        <div className="card mb-3" key={prod.id} style={{maxWidth: '540px'}}>
-                            <div className="row g-0">
-                                <div className="col-md-4">
-                                    <img src={prod.img} alt="producto" className="img-fluid rounded-start" />
-                                </div>
+            <>
+                <h1 className="carritoTitulo">Tus productos seleccionados!</h1>
+                <div className="container cartContainer">
+                    {
+                        carrito.map((prod) =>
+                        <div className="card mb-3 cartEstilos" key={prod.id}>
+                            <div className="col-md-4 contenedorImg">
+                                <img src={prod.img} alt="producto" className="img-fluid rounded-start imgCart" />
                             </div>
-                            <div className="col-md-8"></div>
-                                <div className="cardBody">
-                                    <h5 className="card-title"> {`${prod.nombre} ${prod.marca}`}</h5>
-                                    <p className="card-text">Cantidad: {prod.cant}</p>
-                                    <p className="card-text">Precio unitario: {new Intl.NumberFormat ('de-De').format(prod.precio)} </p>
-                                    <p className="card-text">Precio total: {new Intl.NumberFormat ('de-De').format(prod.precio * prod.cant)}</p>
-                                </div>
-                                <button className="btn btn-danger" onClick= {() => removeItem(prod.id)}>Eliminar producto</button>
-                        </div>   
-                )}
+                            <div className="cardBody col-md-4">
+                                <h1 className="card-title"> {`${prod.nombre} ${prod.marca}`}</h1>
+                                <p className="card-text">Cantidad: {prod.cant}</p>
+                                <p className="card-text">Precio unitario: $ {new Intl.NumberFormat ('de-De').format(prod.precio)} </p>
+                                <p className="card-text">Precio total: $ {new Intl.NumberFormat ('de-De').format(prod.precio * prod.cant)}</p>
+                            </div>
+                            <button className="btn btn-danger" onClick= {() => removeItem(prod.id)}><i class="fa-solid fa-trash-can"></i></button>
+                        </div>    
+                    )}
 
 
-                <p>Precio total: ${ new Intl.NumberFormat('de-De').format(totalPrice())}</p>
-                <button className="btn btn-danger" onClick={emptyCart}>Vaciar Carrito</button>
-                <div>    
-                    <button className="btn btn-dark"><Link to={'/checkout'}> Finalizar Compra </Link> </button>
-                    <button className="btn btn-dark"><Link to={'/'}> Continuar Comprando </Link> </button>
+                    <p className="totalPrice">Precio total: $ { new Intl.NumberFormat('de-De').format(totalPrice())}</p>
+                    <div>    
+                        <button className="btn btn-danger" onClick={emptyCart}>Vaciar Carrito</button>
+                        <button className="btn btn-dark"><Link to={'/checkout'} className="nav-link"> Finalizar Compra </Link> </button>
+                        <button className="btn btn-dark"><Link to={'/'} className="nav-link"> Continuar Comprando </Link> </button>
+                    </div>
                 </div>
-            </div>
+            </>
             }
         </>
     );

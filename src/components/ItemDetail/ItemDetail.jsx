@@ -1,5 +1,6 @@
 import ItemCount from "../ItemCount/ItemCount";
 import { useCarritoContext } from "../../context/CarritoContex";
+import { Link } from "react-router-dom";
 const ItemDetail = ({item}) => {
     const {addItem} = useCarritoContext()
     
@@ -20,7 +21,10 @@ const ItemDetail = ({item}) => {
                     <p className="card-text">Precio: $ {new Intl.NumberFormat('de-DE').format(item.precio)}</p>
                     <p className="card-text">Stock: {item.stock}</p>
                     <ItemCount inicial={1} stock={item.stock} onAdd={onAdd}/>
-                    <button className="btn btn-danger finalizarCompra">Finalizar Compra</button>
+                    <div className="d-flex justify-content-around align-items-center">
+                        <button className="btn btn-danger finalizarCompra"><Link to ={'/cart'} className="nav-link">Finalizar Compra </Link></button>
+                        <button className="btn btn-danger finalizarCompra"><Link to={'/'} className="nav-link"> Continuar Comprando </Link></button>
+                    </div>
                 </div>
             </div>
         </div>
