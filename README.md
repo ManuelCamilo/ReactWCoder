@@ -16,4 +16,4 @@ npm i
 *[Bootstrap] (https://getbootstrap.com/) - Bootstrap
 
 ## Video: 📹
-![alt text](https://youtu.be/LlrAmSvnfjA)
+https://youtu.be/LlrAmSvnfjA
