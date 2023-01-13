@@ -39,15 +39,11 @@ const ItemListContainer = () => {
  },[category]);
     
     return (
-        <>
         <div className="d-flex row contenido">
-            <h2 className="destacados">PRODUCTOS DESTACADOS</h2>
             <div className="bg-productos">
                 {productos}
             </div>
         </div>
-        <div className="contenedorFlotante"></div>
-        </>
     );
 }
 

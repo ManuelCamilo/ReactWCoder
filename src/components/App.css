@@ -80,9 +80,6 @@ h3{
 .imagenProducto:hover{
     transform: scale(1.5);
 }
-.contador{
-    margin-top: 10rem;
-}
 .infoProducto__boton{
     border-radius: 4px;
     height: 25%;
@@ -101,4 +98,21 @@ h3{
 .itemDetail{
     max-width: 54rem;
     margin-top: 2rem;
+}
+.contador{
+    margin-top: 5rem;
+    height: 5rem;
+    width: 30rem;
+    margin-left: 19rem;
+
+}
+.masmenos{
+    height: 6rem;
+    width: 6rem;
+}
+.finalizarCompra{
+    margin-top: 3rem;
+}
+.cantidadActual{
+    font-size: 3.9rem;
 }

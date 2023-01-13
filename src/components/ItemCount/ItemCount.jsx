@@ -10,11 +10,11 @@ const ItemCount = ({inicial,stock, onAdd}) => {
     const agregarAlCarrito = () => onAdd(contador)
     
     return (
-        <div className='contador'>
-            <button className='btn btn-dark' onClick={() => restar ()}><i class="fa-solid fa-minus"></i></button>
-            {contador}
-            <button className='btn btn-dark' onClick={() => sumar()}><i class="fa-solid fa-plus"></i></button>
-            <button className='btn btn-light' onClick={agregarAlCarrito}> <i class="fa-solid fa-cart-plus"> </i>  </button>
+        <div className='contador d-flex justify-content-around align-items-center'>
+            <button className='btn btn-dark masmenos' onClick={() => restar ()}><i class="fa-solid fa-minus"></i></button>
+            <p className='cantidadActual'> {contador} </p>
+            <button className='btn btn-dark masmenos' onClick={() => sumar()}><i class="fa-solid fa-plus"></i></button>
+            <button className='btn btn-light masmenos' onClick={agregarAlCarrito}> <i class="fa-solid fa-cart-plus"> </i>  </button>
         </div>
     );
 }
