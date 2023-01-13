@@ -27,15 +27,15 @@ const ItemListContainer = () => {
     }
     
     
-    /*getProducto("vbdgkiCls5mvLmdlXxnE").then(prod => {
-        prod.stock += 20
+    /*getProducto("BgD5mm2eZniA3tRmreIa").then(prod => {
+        prod.stock += 10
         delete prod.id
-        updateProducto("vbdgkiCls5mvLmdlXxnE", prod).then(estado => console.log(estado))
+        updateProducto("BgD5mm2eZniA3tRmreIa", prod).then(estado => console.log(estado))
     }) */
 
     //deleteProducto("aqXOnlLOXyGHeZfazC0W").then(estado => console.log(estado))
 
-    //cargarBDD()
+    // cargarBDD()
  },[category]);
     
     return (
