@@ -81,32 +81,32 @@ const Checkout = () => {
             <form onSubmit={handleSubmit} ref={datosFormulario}>
                 <div className="mb-3">
                     <label htmlFor="nombre" className="form-label">Nombre y Apellido</label>
-                    <input type="text" className="form-control" name="nombreCompleto"  value={formValues.nombreCompleto} onChange={handleChange}/>
+                    <input type="text" className="form-control" name="nombreCompleto" required  value={formValues.nombreCompleto} onChange={handleChange}/>
                     <p className='colorMensajeCheckout'>{formErrors.nombreCompleto}</p>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email</label>
-                    <input type="text" className="form-control" name="email" value={formValues.email} onChange={handleChange}/>
+                    <input type="text" className="form-control" name="email" required value={formValues.email} onChange={handleChange}/>
                     <p className='colorMensajeCheckout'>{formErrors.email}</p>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="email2" className="form-label">Repetir Email</label>
-                    <input type="text" className="form-control" name="validateEmail" value={formValues.validateEmail} onChange={handleChange}/>
+                    <input type="text" className="form-control" name="validateEmail" required value={formValues.validateEmail} onChange={handleChange}/>
                     <p className='colorMensajeCheckout'>{formErrors.validateEmail}</p>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="dni" className="form-label">DNI</label>
-                    <input type="number" className="form-control" name="DNI" value={formValues.DNI} onChange={handleChange}/>
+                    <input type="number" className="form-control" name="DNI" required value={formValues.DNI} onChange={handleChange}/>
                     <p className='colorMensajeCheckout'>{formErrors.DNI}</p>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="celular" className="form-label">Celular</label>
-                    <input type="number" className="form-control" name="celular" value={formValues.celular} onChange={handleChange}/>
+                    <input type="number" className="form-control" name="celular" required value={formValues.celular} onChange={handleChange}/>
                     <p className='colorMensajeCheckout'>{formErrors.celular}</p>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="direccion" className="form-label">Dirección</label>
-                    <input type="text" className="form-control" name="direccion"  value={formValues.direccion} onChange={handleChange}/>
+                    <input type="text" className="form-control" name="direccion" required  value={formValues.direccion} onChange={handleChange}/>
                     <p className='colorMensajeCheckout'>{formErrors.direccion}</p>
                 </div>
                 <button type="submit" className="btn btn-primary">Finalizar Compra</button>
