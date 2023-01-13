@@ -34,9 +34,12 @@ const Checkout = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setFormErrors(validate(formValues));
-        setIsSubmit(true);
-        e.target.reset()
+        if(formValues.email!==formValues.validateEmail){
+            toast.error("Es importante que el campo Email y Repetir Email sean iguales")
+        }else{        
+            consultarFormulario();
+            e.target.reset()
+        }
     };
 
     const handleChange = (e)=>{
@@ -44,75 +47,33 @@ const Checkout = () => {
         setFormValues({ ...formValues, [name]: value });
     }
 
-    const validate = (values)=>{
-        const errors ={};
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;      
-        // No ingresa nombres
-        if (!values.nombreCompleto) {
-            errors.nombreCompleto = "El nombre y apellido son necesarios";
-        }
-        //Errores del email (no ingreso mail)
-        if (!values.email) {
-            errors.email = "El email es requerido";
-        } else if (!regex.test(values.email)) {
-            errors.email = "Ese no es un formato valido de email";
-        }
-        //validacion correo, tipo, y repetición (que no sea el mismo)
-        if (!values.validateEmail){
-            errors.validateEmail = "Debe ingresar nuevamente el email";            
-        }else if (!regex.test(values.validateEmail)) {
-            errors.validateEmail = "Ese no es un formato valido de email";
-        }else if (values.validateEmail!==values.email){
-            errors.validateEmail = "Los emails no coinciden";
-        }
-        //validación número - dni
-        if (!values.DNI){
-            errors.DNI="Debe ingresar su DNI";
-        }
-        //validación número - telefono
-        if (!values.celular){
-            errors.celular="Debe ingresar su celular";
-        }
-        // no ingresa direccion
-        if (!values.direccion){
-            errors.direccion="Debe ingresar su direccion";
-        }
-        return errors;
-    };
 
 
+    // aux.forEach((prodCarrito) => {
+    //     getProducto(prodCarrito.id).then(prodBDD => {
+    //         if(prodBDD.stock >= prodCarrito.cant) {
+    //             prodBDD.stock -= prodCarrito.cant
+    //             updateProducto(prodCarrito.id, prodBDD)                    
+    //         } else {
+    //             toast.error(`El producto ${prodBDD.nombreAMostrar} no tiene stock`);                    
+    //             emptyCart();
+    //             navigate("/")                      
+    //         }
+    //     })            
+    // })
 
-    const consultarFormulario = (e) => {
+
+    const consultarFormulario = async () => {
         const datForm = new FormData(datosFormulario.current)
         const cliente = Object.fromEntries(datForm)
-        const aux = [...carrito]
-        aux.forEach(prodCarrito => {
-            getProducto(prodCarrito.id).then(prodBDD => {
-                if(prodBDD.stock >= prodCarrito.cant) {
-                    prodBDD.stock -= prodCarrito.cant
-                    updateProducto(prodCarrito.id, prodBDD)                    
-                } else {
-                    toast.error(`El producto ${prodBDD.nombreAMostrar} no tiene stock`);                    
-                    emptyCart();
-                    navigate("/")                      
-                }
-            })            
-        })
-
+        console.log("cliente:",cliente)
         delete cliente["validateEmail"];
-
-        createOrdenCompra(cliente,totalPrice(), new Date().toISOString()).then(ordenCompra => {
-            getOrdenCompra(ordenCompra.id).then(item => {
-                toast.success(`¡Muchas gracias por su compra, su orden es ${item.id}`)
-                emptyCart()      
-                e.target.reset()      
-                navigate("/")
-            }).catch(error => {
-                toast.error("Su orden no fue generada con exito")
-                console.error(error)
-            })                
-        })
-
+        const order = await createOrdenCompra(cliente,totalPrice(), new Date().toISOString())
+        const item =  await getOrdenCompra(order.id)
+        toast.success(`¡Gracias por comprar en Sharky Games! su orden de compra es ${item.id}`)
+        emptyCart()       
+        setFormValues(initialValues)   
+        navigate("/")
     }
 
     return (
@@ -156,4 +117,3 @@ const Checkout = () => {
 }
 
 export default Checkout;
-
